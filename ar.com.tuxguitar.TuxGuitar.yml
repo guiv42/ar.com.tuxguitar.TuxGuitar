@@ -51,7 +51,7 @@ modules:
       - install -Dm0644 "${FLATPAK_ID}.metainfo.xml" -t "${FLATPAK_DEST}/share/metainfo/"
       - install -Dm0644 "${FLATPAK_DEST}/share/skins/Oxygen/icon.png" "${FLATPAK_DEST}/share/icons/hicolor/96x96/apps/${FLATPAK_ID}.png"
       - install -D tuxguitar.sh "${FLATPAK_DEST}/bin/tuxguitar"
-      - install -Dm0644 "${FLATPAK_DEST}/share/applications/tuxguitar.desktop" "${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
+      - install -Dm0644 "${FLATPAK_DEST}/share/applications/TuxGuitar.desktop" "${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
       - desktop-file-edit --set-key=Exec --set-value='tuxguitar %F' "${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
       - desktop-file-edit --set-icon="${FLATPAK_ID}" "${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
       - install -d "${FLATPAK_DEST}/extensions/Plugins"
